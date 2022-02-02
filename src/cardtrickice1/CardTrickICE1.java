@@ -40,8 +40,9 @@ public class CardTrickICE1 {
             magichand[i]= new Card(c.ranSuit(),c.ranValue());
         }   
         //Print the value and suit of card from array of object
-        for (Card magichand1 : magichand) {
-            System.out.println(magichand1.getValue()+" of "+magichand1.getSuits());
+        for (int i=0;i<magichand.length;i++)
+        {
+            System.out.println(magichand[i].getValue()+" of "+magichand[i].getSuits());
         }
         //Check whether the enetered card is available or not
         for(int j=0;j<7;j++)
