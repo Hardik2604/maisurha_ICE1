@@ -3,6 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+//avfsds
 package cardtrickice1;
 
 /** define card value and suits
