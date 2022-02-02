@@ -28,6 +28,9 @@ public class CardTrickICE1 {
         String suit;
         // array of Card object- suit and value
         Card[] magichand= new Card[7];
+        Card luckyCard=new Card();
+        luckyCard.setValue(7);
+        luckyCard.setSuits("Hearts");
         //JoptionPane to take input from user
         JOptionPane.showMessageDialog(null,"Enter the card details :");
         suit=JOptionPane.showInputDialog(null, "Suits:\n1.Spades\n2.Jack\n3.Hearts\n4.Diamonds\nEnter the suit : ","Suit Type",JOptionPane.OK_OPTION);
