@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-//avfsds
 package cardtrickice1;
 
 /** define card value and suits
  * 
- *
  * @author sivagamasrinivasan
+ * @author Hardikkumar Maisuriya
+ * Student ID:991621036
  */
 public class Card 
 {
@@ -17,7 +17,13 @@ public class Card
     private String suits; //encapsulation
     //constant
     public static final String [] SUITS = { "diamonds","clubs","spades","hearts"};
+    public Card(String s, int v)
+    {
+        this.suits=s;
+        this.value=v;
+    }
 
+    public Card(){}
     /**
      * @return the value
      */
@@ -48,5 +54,22 @@ public class Card
    //number
     
     //method for suits
-    
+    /**
+     * 
+     * @return suit[k]= returns random value from suit[] array
+     */
+    public String ranSuit()
+    {
+        int k=(int)(Math.random()*4);  
+        return SUITS[k];  
+    }
+
+    /**
+     * 
+     * @return random integer value between 1-13
+     */
+    public int ranValue()
+    { 
+        return (int)(1+Math.random()*13);
+    }
 }
